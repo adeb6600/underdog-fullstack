@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Row, Media} from 'react-bootstrap'
 
 // const Company = ({name,location,logo,description})=>
 // (<Row className="company-container">
@@ -9,7 +8,7 @@ import {Row, Media} from 'react-bootstrap'
 //     </Media.Left>
 //     <Media.Body>
 //       <Media.Heading>{name}</Media.Heading>
-//       <p>Located in {location}</p>
+//       <div>Located in {location}</p>
 //       <p>
 //       {description}
 //       </p>
@@ -18,20 +17,17 @@ import {Row, Media} from 'react-bootstrap'
 //     </Row>)
 
 const Company = ({name,location,logo,description})=>
-(<Row className="company-container">
-    <Media>
-    <div className="hanging-image">
-    <img src={logo} height='auto' width={80}/>
-    </div>
-    <Media.Body>
-      <Media.Heading>{name}</Media.Heading>
-      <p>Located in {location}</p>
-      <p>
+(<div className="card-base p-3 d-flex flex-column justify-content-center align-items-center">
+  
+      <div><img src={logo} height='auto' width={105}/></div>
+    
+      <div className="name mb-3 mt-3">{name}</div>
+      <div className="location text-center mb-3">Located in {location}</div>
+      <div className="description mb-3">
       {description}
-      </p>
-    </Media.Body>
-  </Media>
-    </Row>)
+      </div>
+  
+    </div>)
 
 
 export default Company

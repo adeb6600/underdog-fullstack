@@ -6,14 +6,15 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^3.4.0",
+    "bootstrap": "^4.2.1",
     "react": "16.4.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "16.4.2",
+    "react-icons": "^3.3.0",
     "simple-flexbox": "^1.2.0"
   },
   "devDependencies": {
-    "parcel-bundler": "1.9.7"
+    "parcel-bundler": ">=1.10.0"
   },
   "browserslist": [
     "since 2017-06"
