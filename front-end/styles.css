@@ -32,3 +32,79 @@ h2 {
    height:80px;
    
 }
+
+.name {
+    width: 90px;
+    height: 24px;
+    font-family: SFProText;
+    font-size: 27px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.89;
+    letter-spacing: -0.7px;
+    color: #000000;
+  }
+
+.card-base {
+    width: 442px;
+    height: 507px;
+    border-radius: 1px;
+    background-color: #ffffff;
+  }
+
+  .location {
+    width: 206px;
+    height: 28px;
+    font-family: SFProDisplay;
+    font-size: 23px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #9b9b9b;
+  }
+
+  .description {
+    width: 307px;
+    height: 105px;
+    font-family: SFProDisplay;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .rated-company-header {
+    width: 232px;
+    height: 34px;
+    font-family: SFProDisplay;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 0.4px;
+    color: #4a4a4a;
+  }
+  .rated-text {
+    width: 143px;
+    height: 31px;
+    font-family: SFProText;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: 0.6px;
+    color: #4a4a4a;
+  }
+  
+  .rated-text .text-style-1 {
+    color: #9b9b9b;
+  }
