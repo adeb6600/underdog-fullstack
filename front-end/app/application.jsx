@@ -68,7 +68,7 @@ class Application extends Component {
           <div className="row justify-content-between">
 
             <div className="col-md-7 col-xs-12 float-right">
-              {this.state.companies.length == 0 && <div className="card-base p-3 d-flex flex-column justify-content-center align-items-center">
+              {this.state.companies.length ==  0 && <div className="card-base p-3 d-flex flex-column justify-content-center align-items-center">
                 All Done</div>}
               {this.state.companies.length > 0 && <Company {...companyToRate} />}
               <div className="row  align-items-center justify-content-center">

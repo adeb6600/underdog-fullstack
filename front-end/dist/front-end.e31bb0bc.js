@@ -21686,7 +21686,7 @@ const Rating = (_ref) => {
     src: rating.logo,
     height: "auto",
     width: 40
-  }), rating.name)), ratings.length == 0 && _react.default.createElement("div", null, "You Haven't rated any companies yet"));
+  }), rating.name, "  ", rating.vote ? _react.default.createElement(_go.GoThumbsup, null) : _react.default.createElement(_go.GoThumbsdown, null))), ratings.length == 0 && _react.default.createElement("div", null, "You Haven't rated any companies yet"));
 };
 
 var _default = Rating;
@@ -23518,7 +23518,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52050" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53647" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
