@@ -1,7 +1,21 @@
-@import '/node_modules/bootstrap/dist/css/bootstrap.css';
-@import '/node_modules/bootstrap/dist/css/bootstrap-theme.css'; 
-
-
+@font-face {
+    font-family: SFProDisplay-Bold;
+    src: url(./fonts/SF-Pro-Display-Bold.otf) format('otf'),
+  }
+  @font-face {
+    font-family: SFProText-Semibold;
+    src: url(./fonts/SF-Pro-Display-Semibold.otf) format('otf'),
+  }
+  @font-face {
+    font-family: SFProDisplay-Regular;
+    src: url(./fonts/SF-Pro-Display-Regular.otf) format('otf'),
+  }
+  @font-face {
+    font-family: SFProText-Regular;
+    src: url(./fonts/SF-Pro-Text-Regular.otf) format('otf'),
+  }
+  @import '/node_modules/bootstrap/dist/css/bootstrap.css';
+  
 .company-container{
     justify-content: 'center';
     margin-bottom: 30px;
@@ -14,7 +28,12 @@
    
 }
 .rating-button{
-    margin:10px;
+    height:60px;
+    width:60px;
+    border-radius:30px;
+    border-style:solid;
+    text-align: center;
+    border-color: darkolivegreen;
 }
 
 p{
@@ -33,10 +52,20 @@ h2 {
    
 }
 
+.page-header{
+    font-family: SFProDisplay-Bold;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.03;
+    letter-spacing: 0.5px;
+    color: #000000;
+    height:100;
+  }
 .name {
-    width: 90px;
     height: 24px;
-    font-family: SFProText;
+    font-family: SFProText-Semibold;
     font-size: 27px;
     font-weight: 600;
     font-style: normal;
@@ -47,16 +76,19 @@ h2 {
   }
 
 .card-base {
-    width: 442px;
-    height: 507px;
     border-radius: 1px;
+    border-style: solid;
+    height: 400px !important;
     background-color: #ffffff;
+    border-color: rgba(46, 91, 255, 0.08);
+    border-radius:5px;
+
   }
 
   .location {
     width: 206px;
     height: 28px;
-    font-family: SFProDisplay;
+    font-family: SFProDisplay-Regular;
     font-size: 23px;
     font-weight: normal;
     font-style: normal;
@@ -67,9 +99,7 @@ h2 {
   }
 
   .description {
-    width: 307px;
-    height: 105px;
-    font-family: SFProDisplay;
+    font-family: SFProDisplay-Regular;
     font-size: 25px;
     font-weight: normal;
     font-style: normal;
@@ -81,9 +111,9 @@ h2 {
   }
 
   .rated-company-header {
-    width: 232px;
     height: 34px;
-    font-family: SFProDisplay;
+    width:232px;
+    font-family: SFProDisplay-Bold;
     font-size: 28px;
     font-weight: bold;
     font-style: normal;
@@ -93,9 +123,8 @@ h2 {
     color: #4a4a4a;
   }
   .rated-text {
-    width: 143px;
     height: 31px;
-    font-family: SFProText;
+    font-family: SFProText-Regular;
     font-size: 25px;
     font-weight: normal;
     font-style: normal;

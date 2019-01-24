@@ -176,17 +176,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/glyphicons-halflings-regular.eot":[["glyphicons-halflings-regular.2fbbc53c.eot","node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot"],"node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot"],"./../fonts/glyphicons-halflings-regular.woff2":[["glyphicons-halflings-regular.5205a59f.woff2","node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"],"node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"],"./../fonts/glyphicons-halflings-regular.woff":[["glyphicons-halflings-regular.87950c9d.woff","node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff"],"node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff"],"./../fonts/glyphicons-halflings-regular.ttf":[["glyphicons-halflings-regular.dc52369b.ttf","node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf"],"node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf"],"./../fonts/glyphicons-halflings-regular.svg":[["glyphicons-halflings-regular.fa9c14a4.svg","node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg"],"node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/bootstrap/dist/css/bootstrap-theme.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/node_modules/bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","/node_modules/bootstrap/dist/css/bootstrap-theme.css":"node_modules/bootstrap/dist/css/bootstrap-theme.css","_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/node_modules/bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","./fonts/SF-Pro-Display-Bold.otf":[["SF-Pro-Display-Bold.84503a3b.otf","fonts/SF-Pro-Display-Bold.otf"],"fonts/SF-Pro-Display-Bold.otf"],"./fonts/SF-Pro-Display-Semibold.otf":[["SF-Pro-Display-Semibold.80de32cc.otf","fonts/SF-Pro-Display-Semibold.otf"],"fonts/SF-Pro-Display-Semibold.otf"],"./fonts/SF-Pro-Display-Regular.otf":[["SF-Pro-Display-Regular.19001862.otf","fonts/SF-Pro-Display-Regular.otf"],"fonts/SF-Pro-Display-Regular.otf"],"./fonts/SF-Pro-Text-Regular.otf":[["SF-Pro-Text-Regular.9a6d34c4.otf","fonts/SF-Pro-Text-Regular.otf"],"fonts/SF-Pro-Text-Regular.otf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -213,7 +208,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56680" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52050" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
