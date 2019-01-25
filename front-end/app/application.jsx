@@ -3,6 +3,7 @@ import Company from './components/company';
 import Rating from './components/ratings';
 import { apiInstance } from './lib';
 import { GoThumbsdown, GoThumbsup } from "react-icons/go";
+import { APIURL } from './constants';
 class Application extends Component {
   constructor(props) {
     super(props);
@@ -23,8 +24,9 @@ class Application extends Component {
       this.setState({
         loading: true
       })
+  
       let allCompanies = await apiInstance.get('/company')
-        .then(c => c.data.data.Company)
+        .then(c => c.data.data)
       this.setState({
         loading: false,
         companies: allCompanies,

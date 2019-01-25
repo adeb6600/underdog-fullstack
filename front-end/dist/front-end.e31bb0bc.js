@@ -23383,6 +23383,8 @@ var _lib = require("./lib");
 
 var _go = require("react-icons/go");
 
+var _constants = require("./constants");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
@@ -23408,7 +23410,7 @@ class Application extends _react.Component {
       this.setState({
         loading: true
       });
-      let allCompanies = await _lib.apiInstance.get('/company').then(c => c.data.data.Company);
+      let allCompanies = await _lib.apiInstance.get('/company').then(c => c.data.data);
       this.setState({
         loading: false,
         companies: allCompanies,
@@ -23479,7 +23481,7 @@ class Application extends _react.Component {
 
 var _default = Application;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./components/company":"app/components/company.jsx","./components/ratings":"app/components/ratings.jsx","./lib":"app/lib.js","react-icons/go":"node_modules/react-icons/go/index.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./components/company":"app/components/company.jsx","./components/ratings":"app/components/ratings.jsx","./lib":"app/lib.js","react-icons/go":"node_modules/react-icons/go/index.js","./constants":"app/constants.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -23518,7 +23520,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53647" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50966" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
